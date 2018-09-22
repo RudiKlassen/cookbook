@@ -6,7 +6,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
 /**
- * Kategorie-Entity. Rezepte werden in Kategorien unterteilt.
+ * Kategorie-Entity. Rezepte{@link Recipe} werden in Kategorien unterteilt.
  */
 @Entity(name = "CB_CATEGORY")
 public class Category {

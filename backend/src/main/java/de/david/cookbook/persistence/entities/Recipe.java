@@ -39,21 +39,15 @@ public class Recipe {
     @JoinColumn(name = "RECIPE_ID")
     private List<Ingredient> ingredients;
 
-    public Recipe(String name, User author, String imageURL,
+    public Recipe(String name, User author,
                   int servings, String description,
                   Category category, List<Ingredient> ingredients) {
         this.name = name;
         this.author = author;
-        this.imageURL = imageURL;
         this.servings = servings;
         this.description = description;
         this.category = category;
         this.ingredients = ingredients;
-    }
-
-    public Recipe() {
-        //Todo: Später ein Recipe DTO bauen um update und create zu einer Methoden verbinden zu können,
-        // ohne die Notwendigkeit eines leeres Konstruktors. Das hier sorgt dafür, dass nullable false Felder null werden können
     }
 
     public Long getId() {

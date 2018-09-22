@@ -6,7 +6,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
 /**
- * Zutaten-Entity. Beinhaltet Informationen einer Zutat eines Rezeptes.
+ * Zutaten-Entity. Beinhaltet Informationen einer Zutat eines Rezeptes{@link Recipe}.
  */
 @Entity(name = "CB_INGREDIENT")
 public class Ingredient {
